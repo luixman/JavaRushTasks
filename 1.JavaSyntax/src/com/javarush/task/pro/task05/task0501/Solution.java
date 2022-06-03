@@ -5,9 +5,17 @@ package com.javarush.task.pro.task05.task0501;
 */
 
 public class Solution {
-    public static void main(String[] args) {
-        //напишите тут ваш код
-        int[] intArray = new int[10];
-        double[] doubleArray = new double[10];
+    public static int getRandomDiceNumber()
+    {
+        return (int) (Math.random() * 6);
+    }
+
+    public static void main(String[] args)
+    {
+        for (int i = 0; i < 100; i++)
+        {
+            int x = getRandomDiceNumber();
+            System.out.print(x+" ");
+        }
     }
 }

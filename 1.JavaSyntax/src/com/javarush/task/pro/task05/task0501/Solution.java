@@ -15,7 +15,8 @@ public class Solution {
         for (int i = 0; i < 100; i++)
         {
             int x = getRandomDiceNumber();
-            System.out.print(x+" ");
+           // System.out.print(x+" ");
         }
+        System.out.println("Hello world!"+1);
     }
 }

@@ -7,9 +7,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MinesweeperGame extends Game {
-    private static final int SIDE = 9;
+    private static final int SIDE = 11;
     private GameObject[][] gameField = new GameObject[SIDE][SIDE];
     private int countMinesOnField;
+
+    private static final String MINE = "\uD83D\uDCA3";
+
 
     @Override
     public void initialize() {
@@ -28,6 +31,7 @@ public class MinesweeperGame extends Game {
                 setCellColor(x, y, Color.ORANGE);
             }
         }
+        countMineNeighbors();
     }
 
     private List<GameObject> getNeighbors(GameObject gameObject) {
@@ -47,5 +51,38 @@ public class MinesweeperGame extends Game {
             }
         }
         return result;
+    }
+
+    private void countMineNeighbors(){
+        for (int i = 0; i < gameField.length; i++) {
+            for (int j = 0; j < gameField[i].length; j++) {
+                if(gameField[i][j].isMine==false){
+                    for (GameObject neighbor :getNeighbors(gameField[i][j])) {
+                        if(neighbor.isMine){
+                            gameField[i][j].countMineNeighbors++;
+                        }
+                    }
+                    
+
+                }
+            }
+        }
+    }
+
+    @Override
+    public void onMouseLeftClick(int x,int y){
+        openTile(x,y);
+    }
+
+    private void openTile(int x, int y) {
+        GameObject gameObject = gameField[y][x];
+
+        if (gameObject.isMine) {
+            setCellValue(gameObject.x, gameObject.y, MINE);
+        } else {
+            setCellNumber(x, y, gameObject.countMineNeighbors);
+        }
+        gameObject.isOpen = true;
+        setCellColor(x, y, Color.GREEN);
     }
 }

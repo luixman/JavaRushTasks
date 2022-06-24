@@ -14,5 +14,9 @@ public class MyStringWriterExp {
         System.out.println(writer.toString());
         writer.close();
         System.out.println(writer.toString());
+
+        String s=null;
+        String str = s != null ? s : "a";
+        System.out.printf(str);
     }
 }

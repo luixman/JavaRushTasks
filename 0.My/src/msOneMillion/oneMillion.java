@@ -1,5 +1,7 @@
 package msOneMillion;
 
+
+
 public class oneMillion {
     private static double [] ms=new double[100_000_000];
     private static double [] ms2=new double[100_000_000];
@@ -13,6 +15,8 @@ public class oneMillion {
 
 
         }
+
+
 
     }
 }

@@ -4,6 +4,8 @@ package com.javarush.task.pro.task13.task1313;
 StringsLinkedList
 */
 
+
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -18,5 +20,9 @@ public class Solution {
         stringsLinkedList.add("8");
         stringsLinkedList.add("9");
         stringsLinkedList.printAll();
+
+
+
+
     }
 }

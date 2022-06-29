@@ -3,10 +3,12 @@ package MyStringWriter;
 import java.io.IOException;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MyStringWriterExp {
     public static void main(String[] args) throws IOException {
-        StringWriter writer=new StringWriter();
+       /* StringWriter writer=new StringWriter();
         writer.write("Hello");
         writer.write("123");
         System.out.println(writer.toString());
@@ -17,6 +19,27 @@ public class MyStringWriterExp {
 
         String s=null;
         String str = s != null ? s : "a";
-        System.out.printf(str);
+        System.out.printf(str);*/
+
+
+
+
     }
+
+
+
+
 }
+
+
+
+
+/*
+Обновление пути
+*/
+
+
+
+
+
+

@@ -30,5 +30,7 @@ public class binarySearch {
             mid = (low + high) / 2;
         }
         return index;
+
+
     }
 }

@@ -1,2 +1,6 @@
 ﻿/out
 JavaRushPlugin.properties
+/target/
+.idea/
+*.iml
+/JavaRushPlugin.properties

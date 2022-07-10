@@ -1,6 +1,7 @@
 package msOneMillion;
 
 
+import java.util.*;
 
 public class oneMillion {
     private static double [] ms=new double[100_000_000];
@@ -12,9 +13,11 @@ public class oneMillion {
             ms2[i]=i;
                 System.out.println(ms[i]+" ыыы "+ms2[i]);
 
-
-
         }
+
+        Set<Integer> f = new HashSet<>();
+
+
 
 
 

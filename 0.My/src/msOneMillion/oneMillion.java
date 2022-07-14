@@ -1,6 +1,8 @@
 package msOneMillion;
 
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.*;
 
 public class oneMillion {
@@ -15,7 +17,6 @@ public class oneMillion {
 
         }
 
-        Set<Integer> f = new HashSet<>();
 
 
 

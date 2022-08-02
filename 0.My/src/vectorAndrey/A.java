@@ -9,7 +9,7 @@ public class A {
         this.b = b;
     }
 
-    public int getA() {
+    public int getA()  {
         return a;
     }
 
@@ -25,3 +25,5 @@ public class A {
         this.b = b;
     }
 }
+
+

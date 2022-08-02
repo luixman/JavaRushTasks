@@ -15,8 +15,8 @@ public class Solution {
             "1100", "1101", "1110", "1111"};
 
     public static void main(String[] args) {
-        // String binaryNumber = "100111010000";
-        String binaryNumber = null;
+         String binaryNumber = "100111010000";
+        //String binaryNumber = "13";
         System.out.println("Двоичное число " + binaryNumber + " равно шестнадцатеричному числу " + toHex(binaryNumber));
         String hexNumber = "9d0";
         System.out.println("Шестнадцатеричное число " + hexNumber + " равно двоичному числу " + toBinary(hexNumber));
